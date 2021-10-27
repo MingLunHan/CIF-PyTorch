@@ -65,7 +65,7 @@ class CifMiddleware(nn.Module):
                 cif_out:
                     the cif outputs
                 cif_out_padding_mask:
-                    the padding infomation for cif outputs (whose padded regions are filled with ones)
+                    the padding infomation for cif outputs (whose padded regions are filled with zeros)
                 quantity_out:
                     the sum of weights for the calculation of quantity loss
         """
