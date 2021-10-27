@@ -1,2 +1,3 @@
 # CIF-PyTorch
-The PyTorch based implementation of continuous integrate-and-fire (CIF) module.
+This is a PyTorch based implementation of continuous integrate-and-fire (CIF) module.
+
