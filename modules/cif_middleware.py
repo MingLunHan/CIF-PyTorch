@@ -164,9 +164,9 @@ class CifMiddleware(nn.Module):
                         cur_accumulated_weight.repeat([1, encoder_embed_dim]) <= self.tail_handling_firing_threshold,
                         # shape B x C
                         torch.zeros([batch_size, encoder_embed_dim]).cuda(),
-                        # less equal than 0.6, discarded.
+                        # less equal than tail_handling_firing_threshold, discarded.
                         cur_accumulated_state / (cur_accumulated_weight + 1e-10)
-                        # bigger than 0.6, normalized and kept.
+                        # bigger than tail_handling_firing_threshold, normalized and kept.
                     ), cur_fired_state)
                 # shape B x T
 
