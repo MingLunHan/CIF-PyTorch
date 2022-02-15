@@ -34,7 +34,7 @@ class CifMiddleware(nn.Module):
                 self.encoder_embed_dim,
                 self.encoder_embed_dim,
                 self.conv_cif_width,
-                stride=1, padding=1,
+                stride=1, padding=int(self.conv_cif_width / 2),
                 dilation=1, groups=1,
                 bias=True, padding_mode='zeros'
             ).cuda()
