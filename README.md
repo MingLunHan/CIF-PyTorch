@@ -4,17 +4,29 @@ A PyTorch implementation of continuous integrate-and-fire (CIF) module for end-t
 # A set of feasible hyper-parameters
 
 encoder_embed_dim: 256 (should be the innermost dimension of inputs)
+
 produce_weight_type: "conv"
+
 cif_threshold: 0.99
+
 conv_cif_layer_num: 1
+
 conv_cif_width: 3 or 5
+
 conv_cif_output_channels_num: 256
+
 conv_cif_dropout: 0.0
+
 dense_cif_units_num: 256
+
 apply_scaling: True
+
 apply_tail_handling: True
+
 tail_handling_firing_threshold: 0.5
+
 add_cif_ctxt_layers: False
+
 
 ## References
 [1] CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition https://arxiv.org/abs/1905.11235
