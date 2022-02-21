@@ -1,7 +1,7 @@
 # CIF-PyTorch
 A PyTorch implementation of continuous integrate-and-fire (CIF) module for end-to-end (E2E) automatic speech recognition (ASR) [1].
 
-# A set of feasible hyper-parameters
+# Available Settings
 
 encoder_embed_dim: 256 (should be the innermost dimension of inputs)
 
