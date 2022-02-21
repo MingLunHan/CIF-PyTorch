@@ -3,28 +3,17 @@ A PyTorch implementation of continuous integrate-and-fire (CIF) module for end-t
 
 # Available Settings
 ```
-encoder_embed_dim: 256 (should be the innermost dimension of inputs)
-
+encoder_embed_dim: 256 # should be the innermost dimension of inputs
 produce_weight_type: "conv"
-
 cif_threshold: 0.99
-
 conv_cif_layer_num: 1
-
 conv_cif_width: 3 or 5
-
 conv_cif_output_channels_num: 256
-
-conv_cif_dropout: 0.0
-
+conv_cif_dropout: 0.1
 dense_cif_units_num: 256
-
 apply_scaling: True
-
 apply_tail_handling: True
-
 tail_handling_firing_threshold: 0.5
-
 add_cif_ctxt_layers: False
 ```
 
