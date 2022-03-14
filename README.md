@@ -22,7 +22,7 @@ add_cif_ctxt_layers: False
 
 [2] CIF-based Collaborative Decoding for End-to-end Contextual Speech Recognition https://arxiv.org/abs/2012.09466
 
-[3] Improving End-to-End Contextual Speech Recognition with Fine-grained Contextual Knowledge Selection https://arxiv.org/abs/2201.12806
+[3] Improving End-to-End Contextual Speech Recognition with Fine-Grained Contextual Knowledge Selection https://arxiv.org/abs/2201.12806
 
 [4] A Comparison of Label-Synchronous and Frame-Synchronous End-to-End Models for Speech Recognition https://arxiv.org/abs/2005.10113
 
