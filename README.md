@@ -17,7 +17,11 @@ tail_handling_firing_threshold: 0.5
 add_cif_ctxt_layers: False
 ```
 
-## 2. References
+## 2. Todo
+
+- [ ] release a complete CIF-based speech recognizer 
+
+## 3. References
 [1] CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition https://arxiv.org/abs/1905.11235
 
 [2] CIF-based Collaborative Decoding for End-to-end Contextual Speech Recognition https://arxiv.org/abs/2012.09466
