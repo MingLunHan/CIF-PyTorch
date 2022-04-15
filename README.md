@@ -1,5 +1,5 @@
 ## CIF-PyTorch
-A PyTorch implementation of continuous integrate-and-fire (CIF) module for end-to-end (E2E) automatic speech recognition (ASR), which is proposed in **Cif: Continuous integrate-and-fire for end-to-end speech recognition**.
+A PyTorch implementation of continuous integrate-and-fire (CIF) module for end-to-end (E2E) automatic speech recognition (ASR), which is proposed in **Cif: Continuous integrate-and-fire for end-to-end speech recognition** https://ieeexplore.ieee.org/document/9054250.
 
 ### 1. Available Settings
 ```
