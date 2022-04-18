@@ -45,4 +45,4 @@ add_cif_ctxt_layers: False
 
 - A PyTorch implementation of a independent CIF module: https://github.com/MingLunHan/CIF-PyTorch
 
-- CIF-based Contextualization: https://github.com/MingLunHan/CIF-ColDec
+- CIF-based Contextualization, Collaborative Decoding: https://github.com/MingLunHan/CIF-ColDec
