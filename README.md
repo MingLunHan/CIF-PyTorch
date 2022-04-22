@@ -41,6 +41,9 @@ add_cif_ctxt_layers: False
   - A Comparative Study on Non-Autoregressive Modelings for Speech-to-Text Generation https://arxiv.org/abs/2110.05249
   - Non-Autoregressive Lipreading Model with Integrate-and-Fire https://arxiv.org/abs/2008.02516
 
+**Speech Translation**:
+  - Exploring Continuous Integrate-and-Fire for Efficient and Adaptive Simultaneous Speech Translation https://arxiv.org/abs/2204.09595
+
 #### b. Repositories:
 
 - A PyTorch implementation of a independent CIF module: https://github.com/MingLunHan/CIF-PyTorch
