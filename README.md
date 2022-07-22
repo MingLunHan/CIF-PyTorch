@@ -17,11 +17,7 @@ tail_handling_firing_threshold: 0.5
 add_cif_ctxt_layers: False
 ```
 
-### 2. Todo
-
-- [ ] release a complete CIF-based speech recognizer 
-
-### 3. **Other CIF Resources**
+### 2. **Other CIF Resources**
 
 #### a. Papers:
 
@@ -49,3 +45,7 @@ add_cif_ctxt_layers: False
 - A PyTorch implementation of a independent CIF module: https://github.com/MingLunHan/CIF-PyTorch
 
 - CIF-based Contextualization, Collaborative Decoding (ColDec): https://github.com/MingLunHan/CIF-ColDec
+
+### 3. Todo List
+
+- [ ] release a complete CIF-based speech recognizer 
