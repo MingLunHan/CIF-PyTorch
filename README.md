@@ -17,7 +17,7 @@ tail_handling_firing_threshold: 0.5
 add_cif_ctxt_layers: False
 ```
 
-### 2. **Other CIF Resources**
+### 2. **Other CIF Resources & Materials**
 
 #### a. Papers:
 
