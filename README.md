@@ -46,6 +46,8 @@ add_cif_ctxt_layers: False
 
 - CIF-based Contextualization, Collaborative Decoding (ColDec): https://github.com/MingLunHan/CIF-ColDec
 
+- Cif as a bridge for the connection of pre-trained acoustic model and pre-trained language model: https://github.com/aispeech-lab/w2v-cif-bert
+
 ### 3. Todo List
 
 - [ ] release a complete CIF-based speech recognizer 
