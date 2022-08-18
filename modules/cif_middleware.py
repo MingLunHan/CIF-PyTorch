@@ -1,9 +1,3 @@
-# @Time     : 2021/8/9
-# @Affiliate: Institute of Automation, Chinese Academy of Sciences (CASIA), Beijing, China
-# @Author   : Minglun Han
-# @Email    : hanminglun2018@ia.ac.cn
-# @File     : cif_middleware.py
-
 import torch
 import torch.nn as nn
 
