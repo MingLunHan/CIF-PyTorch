@@ -17,7 +17,12 @@ tail_handling_firing_threshold: 0.5
 add_cif_ctxt_layers: False
 ```
 
-### 2. **Other CIF Resources & Materials**
+### 2. **Tips**
+
+1. For speech recognition, we usually down-sample the input frame sequence to 1/8 of the its length at the encoder side (which is different from most other ASR models) to ensure efficient training of the CIF module. For other tasks, it should also be ensured that the length difference between input and output of the CIF is kept within reasonable range.
+2. During training, when the scaled sum of the weights differs from the length of the reference transcription, you can truncate the reference and the model output to the same length.
+
+### 3. **Other CIF Resources and Materials**
 
 #### a. Papers:
 
@@ -50,6 +55,6 @@ add_cif_ctxt_layers: False
 
 - CIF as a bridge to connect pre-trained acoustic models and pre-trained language models: https://github.com/aispeech-lab/w2v-cif-bert
 
-### 3. Todo List
+### 4. Todo List
 
 - [ ] release a complete CIF-based speech recognizer 
