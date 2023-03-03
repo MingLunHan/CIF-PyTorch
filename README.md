@@ -43,7 +43,7 @@ add_cif_ctxt_layers: False
   - Boundary and Context Aware Training for CIF-based Non-Autoregressive End-to-end ASR https://arxiv.org/abs/2104.04702
   - A Comparative Study on Non-Autoregressive Modelings for Speech-to-Text Generation https://arxiv.org/abs/2110.05249
   
-**Non-Autoregressive Lip Reading**
+**Non-Autoregressive Lip Reading**:
   - Non-Autoregressive Lipreading Model with Integrate-and-Fire https://arxiv.org/abs/2008.02516
 
 **Speech Translation**:
