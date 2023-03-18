@@ -32,6 +32,7 @@ add_cif_ctxt_layers: False
 **ASR**:
   - CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition https://ieeexplore.ieee.org/document/9054250
   - A Comparison of Label-Synchronous and Frame-Synchronous End-to-End Models for Speech Recognition https://arxiv.org/abs/2005.10113
+  - Knowledge Transfer from Pre-trained Language Models to CIF-based Speech Recognizers via Hierarchical Distillation https://arxiv.org/pdf/2301.13003
 
 **ASR Contextualization & Customization & Personalization**:
   - CIF-based Collaborative Decoding for End-to-End Contextual Speech Recognition https://ieeexplore.ieee.org/document/9415054
@@ -49,6 +50,9 @@ add_cif_ctxt_layers: False
 
 **Speech Translation**:
   - Exploring Continuous Integrate-and-Fire for Efficient and Adaptive Simultaneous Speech Translation https://arxiv.org/abs/2204.09595
+  
+**Spiking Neural Networks**:
+  - Complex Dynamic Neurons Improved Spiking Transformer Network for Efficient Automatic Speech Recognition https://arxiv.org/abs/2302.01194
 
 #### b. Repositories:
 
