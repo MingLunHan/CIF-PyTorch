@@ -1,4 +1,7 @@
 ## CIF-PyTorch
+
+**Please refer to https://github.com/MingLunHan/CIF-HieraDist for the latest complete code of the CIF-based speech recognition model！**
+
 A PyTorch implementation of Continuous Integrate-and-Fire (CIF) module for end-to-end (E2E) automatic speech recognition (ASR), which is originally proposed in **Cif: Continuous integrate-and-fire for end-to-end speech recognition** https://ieeexplore.ieee.org/document/9054250.
 
 If you have any questions, please consult hanminglun1996@foxmail.com .
@@ -63,4 +66,3 @@ add_cif_ctxt_layers: False
 - CIF as a bridge to connect pre-trained acoustic models and pre-trained language models: https://github.com/aispeech-lab/w2v-cif-bert
 
 - This repository is the official implementation for the hierarchical knowledge distillation (HieraDist) developed for CIF-based models: https://github.com/MingLunHan/CIF-HieraDist
-- 
