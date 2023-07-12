@@ -1,6 +1,6 @@
 ## CIF-PyTorch
 
-**Please refer to https://github.com/MingLunHan/CIF-HieraDist for the latest complete code of the CIF-based speech recognition model！**
+**Attention! Please refer to https://github.com/MingLunHan/CIF-HieraDist for the our latest implementation of the CIF-based speech recognition model！**
 
 A PyTorch implementation of Continuous Integrate-and-Fire (CIF) module for end-to-end (E2E) automatic speech recognition (ASR), which is originally proposed in **Cif: Continuous integrate-and-fire for end-to-end speech recognition** https://ieeexplore.ieee.org/document/9054250.
 
