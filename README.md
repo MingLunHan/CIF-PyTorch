@@ -77,7 +77,7 @@ add_cif_ctxt_layers: False
   - X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages https://github.com/phellonchen/X-LLM
   - CM-CIF: Cross-Modal for Unaligned Modality Fusion with Continuous Integrate-and-Fire https://ieeexplore.ieee.org/abstract/document/9846612
 
-**Keyword Spotting**
+**Keyword Spotting**:
   - Leveraging Synthetic Speech for CIF-Based Customized Keyword Spotting https://link.springer.com/chapter/10.1007/978-981-97-0601-3_31
 
 #### b. Repositories:
