@@ -74,11 +74,8 @@ add_cif_ctxt_layers: False
   - X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages https://github.com/phellonchen/X-LLM
 
 #### b. Repositories:
-
-- A PyTorch implementation of a independent CIF module: https://github.com/MingLunHan/CIF-PyTorch
-
-- CIF-based Contextualization, Collaborative Decoding (ColDec): https://github.com/MingLunHan/CIF-ColDec
-
-- CIF as a bridge to connect pre-trained acoustic models and pre-trained language models: https://github.com/aispeech-lab/w2v-cif-bert
-
-- This repository is the official implementation for the hierarchical knowledge distillation (HieraDist) developed for CIF-based models: https://github.com/MingLunHan/CIF-HieraDist
+  - A PyTorch implementation of a independent CIF module: https://github.com/MingLunHan/CIF-PyTorch
+  - A faster PyTorch implementation of CIF: https://github.com/George0828Zhang/torch_cif
+  - CIF-based Contextualization, Collaborative Decoding (ColDec): https://github.com/MingLunHan/CIF-ColDec
+  - CIF as a bridge to connect pre-trained acoustic models and pre-trained language models: https://github.com/aispeech-lab/w2v-cif-bert
+  - This repository is the official implementation for the hierarchical knowledge distillation (HieraDist) developed for CIF-based models: https://github.com/MingLunHan/CIF-HieraDist
