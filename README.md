@@ -32,6 +32,10 @@ add_cif_ctxt_layers: False
 
 #### a. Papers:
 
+**LLM+CIF**
+  - X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages https://github.com/phellonchen/X-LLM
+  - Wav2Prompt: End-to-End Speech Prompt Generation and Tuning For LLM in Zero and Few-shot Learning https://arxiv.org/abs/2406.00522
+
 **ASR**:
   - CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition https://ieeexplore.ieee.org/document/9054250 https://linhodong.github.io/cif_alignment/
   - A Comparison of Label-Synchronous and Frame-Synchronous End-to-End Models for Speech Recognition https://arxiv.org/abs/2005.10113
@@ -58,15 +62,16 @@ add_cif_ctxt_layers: False
   - Non-Autoregressive Lipreading Model with Integrate-and-Fire https://arxiv.org/abs/2008.02516
 
 **Speech Translation**:
+  - UniST: Unified End-to-end Model for Streaming and Non-streaming Speech Translation https://www.semanticscholar.org/paper/UniST%3A-Unified-End-to-end-Model-for-Streaming-and-Dong-Zhu/e4d4728bd2e4ba9b91d4d57e98b5c81f84a88a5f
   - Exploring Continuous Integrate-and-Fire for Efficient and Adaptive Simultaneous Speech Translation https://arxiv.org/abs/2204.09595
+  - Training Simultaneous Speech Translation with Robust and Random Wait-k-Tokens Strategy https://aclanthology.org/2023.emnlp-main.484/
   
 **Spiking Neural Networks**:
   - Complex Dynamic Neurons Improved Spiking Transformer Network for Efficient Automatic Speech Recognition https://arxiv.org/abs/2302.01194
 
 **Multimodal ASR**:
   - ViLaS: Exploring the Effects of Vision and Language Context in Automatic Speech Recognition https://ieeexplore.ieee.org/document/10448450
-
-
+  - X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages https://github.com/phellonchen/X-LLM
 
 #### b. Repositories:
 
