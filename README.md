@@ -35,7 +35,7 @@ add_cif_ctxt_layers: False
 **ASR**:
   - CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition https://ieeexplore.ieee.org/document/9054250 https://linhodong.github.io/cif_alignment/
   - A Comparison of Label-Synchronous and Frame-Synchronous End-to-End Models for Speech Recognition https://arxiv.org/abs/2005.10113
-  - Knowledge Transfer from Pre-trained Language Models to CIF-based Speech Recognizers via Hierarchical Distillation https://arxiv.org/pdf/2301.13003
+  - Knowledge Transfer from Pre-trained Language Models to CIF-based Speech Recognizers via Hierarchical Distillation https://www.isca-archive.org/interspeech_2023/han23_interspeech.pdf
   - CIF-T: A Novel CIF-based Transducer Architecture for Automatic Speech Recognition https://arxiv.org/abs/2307.14132
   - CIF-RNNT: Streaming ASR Via Acoustic Word Embeddings with Continuous Integrate-and-Fire and RNN-Transducers https://ieeexplore.ieee.org/document/10448492
   - CIF-PT: Bridging Speech and Text Representations for Spoken Language Understanding via Continuous Integrate-and-Fire Pre-Training https://aclanthology.org/2023.findings-acl.566.pdf
