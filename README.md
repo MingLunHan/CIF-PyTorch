@@ -44,8 +44,7 @@ add_cif_ctxt_layers: False
   - CIF-RNNT: Streaming ASR Via Acoustic Word Embeddings with Continuous Integrate-and-Fire and RNN-Transducers https://ieeexplore.ieee.org/document/10448492
   - CIF-PT: Bridging Speech and Text Representations for Spoken Language Understanding via Continuous Integrate-and-Fire Pre-Training https://aclanthology.org/2023.findings-acl.566.pdf
   - A CIF-Based Speech Segmentation Method for Streaming E2E ASR https://ieeexplore.ieee.org/document/10081040
-  - Paraformer: Fast and Accurate Parallel Transformer for Non-autoregressive End-to-End Speech Recognition https://arxiv.org/abs/2206.08317
-  - Paraformer-v2: An improved non-autoregressive transformer for noise-robust speech recognition https://arxiv.org/abs/2409.17746
+  - Improving CTC-Based Speech Recognition Via Knowledge Transferring from Pre-Trained Language Models https://ieeexplore.ieee.org/abstract/document/9747887
 
 **ASR Context Biasing**:
   - CIF-based Collaborative Decoding for End-to-End Contextual Speech Recognition https://ieeexplore.ieee.org/document/9415054
@@ -57,7 +56,10 @@ add_cif_ctxt_layers: False
 **Non-Autoregressive ASR**:
   - Boundary and Context Aware Training for CIF-based Non-Autoregressive End-to-end ASR https://arxiv.org/abs/2104.04702
   - A Comparative Study on Non-Autoregressive Modelings for Speech-to-Text Generation https://arxiv.org/abs/2110.05249
-  
+  - Paraformer: Fast and Accurate Parallel Transformer for Non-autoregressive End-to-End Speech Recognition https://arxiv.org/abs/2206.08317
+  - Paraformer-v2: An improved non-autoregressive transformer for noise-robust speech recognition https://arxiv.org/abs/2409.17746
+  - E-Paraformer: A Faster and Better Parallel Transformer for Non-autoregressive End-to-End Mandarin Speech Recognition https://www.isca-archive.org/interspeech_2024/zou24_interspeech.pdf
+
 **Non-Autoregressive Lip Reading**:
   - Non-Autoregressive Lipreading Model with Integrate-and-Fire https://arxiv.org/abs/2008.02516
 
@@ -72,6 +74,8 @@ add_cif_ctxt_layers: False
 **Multimodal ASR**:
   - VILAS: Exploring the Effects of Vision and Language Context in Automatic Speech Recognition https://ieeexplore.ieee.org/document/10448450
   - X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages https://github.com/phellonchen/X-LLM
+  - CM-CIF: Cross-Modal for Unaligned Modality Fusion with Continuous Integrate-and-Fire https://ieeexplore.ieee.org/abstract/document/9846612
+  - E-Paraformer: A Faster and Better Parallel Transformer for Non-autoregressive End-to-End Mandarin Speech Recognition https://www.isca-archive.org/interspeech_2024/zou24_interspeech.pdf
 
 #### b. Repositories:
   - A PyTorch implementation of a independent CIF module: https://github.com/MingLunHan/CIF-PyTorch
