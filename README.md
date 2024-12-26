@@ -28,7 +28,7 @@ add_cif_ctxt_layers: False
 2. During training, when the scaled sum of the weights differs from the length of the reference transcription, you can truncate the reference and the model output to the same length.
 3. The scaling strategy during training stage may cause gradient exploding, because the calculation of normalize scalar needs division operation. You could add a small value (1e-8) to the denominator to avoid this problem.
 
-### 3. **Other CIF Resources and Materials**
+### 3. **Other CIF Research Work and Resources**
 
 #### a. Papers:
 
