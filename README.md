@@ -45,6 +45,7 @@ add_cif_ctxt_layers: False
   - CIF-PT: Bridging Speech and Text Representations for Spoken Language Understanding via Continuous Integrate-and-Fire Pre-Training https://aclanthology.org/2023.findings-acl.566.pdf
   - A CIF-Based Speech Segmentation Method for Streaming E2E ASR https://ieeexplore.ieee.org/document/10081040
   - Improving CTC-Based Speech Recognition Via Knowledge Transferring from Pre-Trained Language Models https://ieeexplore.ieee.org/abstract/document/9747887
+  - An efficient text augmentation approach for contextualized Mandarin speech recognition https://arxiv.org/abs/2406.09950
 
 **ASR Context Biasing**:
   - CIF-based Collaborative Decoding for End-to-End Contextual Speech Recognition https://ieeexplore.ieee.org/document/9415054
@@ -75,11 +76,13 @@ add_cif_ctxt_layers: False
   - VILAS: Exploring the Effects of Vision and Language Context in Automatic Speech Recognition https://ieeexplore.ieee.org/document/10448450
   - X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages https://github.com/phellonchen/X-LLM
   - CM-CIF: Cross-Modal for Unaligned Modality Fusion with Continuous Integrate-and-Fire https://ieeexplore.ieee.org/abstract/document/9846612
-  - E-Paraformer: A Faster and Better Parallel Transformer for Non-autoregressive End-to-End Mandarin Speech Recognition https://www.isca-archive.org/interspeech_2024/zou24_interspeech.pdf
+
+**Keyword Spotting**
+  - Leveraging Synthetic Speech for CIF-Based Customized Keyword Spotting https://link.springer.com/chapter/10.1007/978-981-97-0601-3_31
 
 #### b. Repositories:
   - A PyTorch implementation of a independent CIF module: https://github.com/MingLunHan/CIF-PyTorch
   - A faster PyTorch implementation of CIF: https://github.com/George0828Zhang/torch_cif
   - CIF-based Contextualization, Collaborative Decoding (ColDec): https://github.com/MingLunHan/CIF-ColDec
   - CIF as a bridge to connect pre-trained acoustic models and pre-trained language models: https://github.com/aispeech-lab/w2v-cif-bert
-  - This repository is the official implementation for the hierarchical knowledge distillation (HieraDist) developed for CIF-based models: https://github.com/MingLunHan/CIF-HieraDist
+  - The official implementation for the hierarchical knowledge distillation (HieraDist) developed for CIF-based models: https://github.com/MingLunHan/CIF-HieraDist
