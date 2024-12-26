@@ -70,7 +70,7 @@ add_cif_ctxt_layers: False
   - Complex Dynamic Neurons Improved Spiking Transformer Network for Efficient Automatic Speech Recognition https://arxiv.org/abs/2302.01194
 
 **Multimodal ASR**:
-  - ViLaS: Exploring the Effects of Vision and Language Context in Automatic Speech Recognition https://ieeexplore.ieee.org/document/10448450
+  - VILAS: Exploring the Effects of Vision and Language Context in Automatic Speech Recognition https://ieeexplore.ieee.org/document/10448450
   - X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages https://github.com/phellonchen/X-LLM
 
 #### b. Repositories:
