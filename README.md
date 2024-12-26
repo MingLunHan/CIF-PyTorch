@@ -33,11 +33,17 @@ add_cif_ctxt_layers: False
 #### a. Papers:
 
 **ASR**:
-  - CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition https://ieeexplore.ieee.org/document/9054250
+  - CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition https://ieeexplore.ieee.org/document/9054250 https://linhodong.github.io/cif_alignment/
   - A Comparison of Label-Synchronous and Frame-Synchronous End-to-End Models for Speech Recognition https://arxiv.org/abs/2005.10113
   - Knowledge Transfer from Pre-trained Language Models to CIF-based Speech Recognizers via Hierarchical Distillation https://arxiv.org/pdf/2301.13003
+  - CIF-T: A Novel CIF-based Transducer Architecture for Automatic Speech Recognition https://arxiv.org/abs/2307.14132
+  - CIF-RNNT: Streaming ASR Via Acoustic Word Embeddings with Continuous Integrate-and-Fire and RNN-Transducers https://ieeexplore.ieee.org/document/10448492
+  - CIF-PT: Bridging Speech and Text Representations for Spoken Language Understanding via Continuous Integrate-and-Fire Pre-Training https://aclanthology.org/2023.findings-acl.566.pdf
+  - A CIF-Based Speech Segmentation Method for Streaming E2E ASR https://ieeexplore.ieee.org/document/10081040
+  - Paraformer: Fast and Accurate Parallel Transformer for Non-autoregressive End-to-End Speech Recognition https://arxiv.org/abs/2206.08317
+  - Paraformer-v2: An improved non-autoregressive transformer for noise-robust speech recognition https://arxiv.org/abs/2409.17746
 
-**ASR Contextualization & Customization & Personalization**:
+**ASR Context Biasing**:
   - CIF-based Collaborative Decoding for End-to-End Contextual Speech Recognition https://ieeexplore.ieee.org/document/9415054
   - Improving End-to-End Contextual Speech Recognition with Fine-Grained Contextual Knowledge Selection https://ieeexplore.ieee.org/document/9747101
 
@@ -56,6 +62,11 @@ add_cif_ctxt_layers: False
   
 **Spiking Neural Networks**:
   - Complex Dynamic Neurons Improved Spiking Transformer Network for Efficient Automatic Speech Recognition https://arxiv.org/abs/2302.01194
+
+**Multimodal ASR**:
+  - ViLaS: Exploring the Effects of Vision and Language Context in Automatic Speech Recognition https://ieeexplore.ieee.org/document/10448450
+
+
 
 #### b. Repositories:
 
