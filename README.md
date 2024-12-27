@@ -50,6 +50,8 @@ add_cif_ctxt_layers: False
 **ASR Context Biasing**:
   - CIF-based Collaborative Decoding for End-to-End Contextual Speech Recognition https://ieeexplore.ieee.org/document/9415054
   - Improving End-to-End Contextual Speech Recognition with Fine-Grained Contextual Knowledge Selection https://ieeexplore.ieee.org/document/9747101
+  - SeACo-Paraformer: A Non-Autoregressive ASR System with Flexible and Effective Hotword Customization Ability https://arxiv.org/abs/2308.03266
+  - XCB: an effective contextual biasing approach to bias cross-lingual phrases in speech recognition https://arxiv.org/html/2408.10524v1/
 
 **Low-resource Speech Recognition**:
   - Efficiently Fusing Pretrained Acoustic and Linguistic Encoders for Low-resource Speech Recognition https://arxiv.org/abs/2101.06699
