@@ -1,14 +1,34 @@
-## CIF-PyTorch
+# CIF-PyTorch
+
+<div align="center">
+
+**A PyTorch Implementation of the Continuous Integrate-and-Fire (CIF) Module for End-to-End ASR**
+
+[![Paper](https://img.shields.io/badge/Paper-ICASSP%202020-blue)](https://ieeexplore.ieee.org/document/9054250)
+[![Framework](https://img.shields.io/badge/Framework-PyTorch-ee4c2c)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)](./LICENSE)
+
+</div>
 
 > 🚀 **Attention!** Please refer to [**CIF-HieraDist**](https://github.com/MingLunHan/CIF-HieraDist) for our latest and complete implementation of the CIF-based speech recognition model!
 
-A PyTorch implementation of the **Continuous Integrate-and-Fire (CIF)** module for end-to-end (E2E) automatic speech recognition (ASR), originally proposed in [*CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition*](https://ieeexplore.ieee.org/document/9054250).
+This repository provides a PyTorch implementation of the **Continuous Integrate-and-Fire (CIF)** module for end-to-end (E2E) automatic speech recognition (ASR), originally proposed in [*CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition*](https://ieeexplore.ieee.org/document/9054250).
 
-If you have any questions, feel free to contact me at hanminglun1996@foxmail.com.
+📧 If you have any questions, feel free to contact me at hanminglun1996@foxmail.com.
 
 ---
 
-### 1. A Feasible Configuration for the CIF Module
+## Table of Contents
+
+- [1. A Feasible Configuration for the CIF Module](#1-a-feasible-configuration-for-the-cif-module)
+- [2. Tips](#2-tips)
+- [3. Other CIF Research Work and Resources](#3-other-cif-research-work-and-resources)
+  - [a. Papers](#a-papers)
+  - [b. Repositories](#b-repositories)
+
+---
+
+## 1. A Feasible Configuration for the CIF Module
 
 ```yaml
 encoder_embed_dim: 256          # should be the innermost dimension of inputs
@@ -25,70 +45,78 @@ tail_handling_firing_threshold: 0.5
 add_cif_ctxt_layers: False
 ```
 
-### 2. Tips
+---
 
-1. For speech recognition, we usually down-sample the input frame sequence to **1/8** of its length on the encoder side to ensure efficient training of the CIF module. For other tasks, keep the length difference between the CIF input and output within a reasonable range.
-2. During training, when the scaled sum of the weights differs from the length of the reference transcription, truncate the reference and the model output to the same length.
-3. The scaling strategy during training may cause **gradient explosion**, since computing the normalization scalar involves a division. Add a small value (`1e-8`) to the denominator to avoid this problem.
+## 2. Tips
 
-### 3. Other CIF Research Work and Resources
+1. **Down-sampling.** For speech recognition, we usually down-sample the input frame sequence to **1/8** of its length on the encoder side to ensure efficient training of the CIF module. For other tasks, keep the length difference between the CIF input and output within a reasonable range.
+2. **Length alignment.** During training, when the scaled sum of the weights differs from the length of the reference transcription, truncate the reference and the model output to the same length.
+3. **Avoiding gradient explosion.** The scaling strategy during training may cause **gradient explosion**, since computing the normalization scalar involves a division. Add a small value (`1e-8`) to the denominator to avoid this problem.
 
-#### a. Papers
+---
 
-**LLM + CIF**
-- [X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages](https://github.com/phellonchen/X-LLM)
-- [Wav2Prompt: End-to-End Speech Prompt Generation and Tuning for LLM in Zero- and Few-shot Learning](https://arxiv.org/abs/2406.00522)
+## 3. Other CIF Research Work and Resources
 
-**ASR**
-- [CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition](https://ieeexplore.ieee.org/document/9054250) · <cite-inline data-index="1" data-url="https://linhodong.github.io/cif_alignment/" data-title="alignment demo"></cite-inline>
-- [A Comparison of Label-Synchronous and Frame-Synchronous End-to-End Models for Speech Recognition](https://arxiv.org/abs/2005.10113)
-- [Knowledge Transfer from Pre-trained Language Models to CIF-based Speech Recognizers via Hierarchical Distillation](https://www.isca-archive.org/interspeech_2023/han23_interspeech.pdf)
-- [CIF-T: A Novel CIF-based Transducer Architecture for Automatic Speech Recognition](https://arxiv.org/abs/2307.14132)
-- [CIF-RNNT: Streaming ASR via Acoustic Word Embeddings with Continuous Integrate-and-Fire and RNN-Transducers](https://ieeexplore.ieee.org/document/10448492)
-- [CIF-PT: Bridging Speech and Text Representations for Spoken Language Understanding via Continuous Integrate-and-Fire Pre-Training](https://aclanthology.org/2023.findings-acl.566.pdf)
-- [A CIF-Based Speech Segmentation Method for Streaming E2E ASR](https://ieeexplore.ieee.org/document/10081040)
-- [Improving CTC-Based Speech Recognition via Knowledge Transferring from Pre-Trained Language Models](https://ieeexplore.ieee.org/abstract/document/9747887)
-- [An Efficient Text Augmentation Approach for Contextualized Mandarin Speech Recognition](https://arxiv.org/abs/2406.09950)
+### a. Papers
 
-**ASR Context Biasing**
-- [CIF-based Collaborative Decoding for End-to-End Contextual Speech Recognition](https://ieeexplore.ieee.org/document/9415054)
-- [Improving End-to-End Contextual Speech Recognition with Fine-Grained Contextual Knowledge Selection](https://ieeexplore.ieee.org/document/9747101)
-- [SeACo-Paraformer: A Non-Autoregressive ASR System with Flexible and Effective Hotword Customization Ability](https://arxiv.org/abs/2308.03266)
-- [XCB: An Effective Contextual Biasing Approach to Bias Cross-lingual Phrases in Speech Recognition](https://arxiv.org/html/2408.10524v1/)
+- **LLM + CIF**
+  - [X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages](https://github.com/phellonchen/X-LLM)
+  - [Wav2Prompt: End-to-End Speech Prompt Generation and Tuning for LLM in Zero- and Few-shot Learning](https://arxiv.org/abs/2406.00522)
 
-**Low-resource Speech Recognition**
-- [Efficiently Fusing Pretrained Acoustic and Linguistic Encoders for Low-resource Speech Recognition](https://arxiv.org/abs/2101.06699)
+- **ASR**
+  - [CIF: Continuous Integrate-and-Fire for End-to-End Speech Recognition](https://ieeexplore.ieee.org/document/9054250) · <cite-inline data-index="1" data-url="https://linhodong.github.io/cif_alignment/" data-title="alignment demo"></cite-inline>
+  - [A Comparison of Label-Synchronous and Frame-Synchronous End-to-End Models for Speech Recognition](https://arxiv.org/abs/2005.10113)
+  - [Knowledge Transfer from Pre-trained Language Models to CIF-based Speech Recognizers via Hierarchical Distillation](https://www.isca-archive.org/interspeech_2023/han23_interspeech.pdf)
+  - [CIF-T: A Novel CIF-based Transducer Architecture for Automatic Speech Recognition](https://arxiv.org/abs/2307.14132)
+  - [CIF-RNNT: Streaming ASR via Acoustic Word Embeddings with Continuous Integrate-and-Fire and RNN-Transducers](https://ieeexplore.ieee.org/document/10448492)
+  - [CIF-PT: Bridging Speech and Text Representations for Spoken Language Understanding via Continuous Integrate-and-Fire Pre-Training](https://aclanthology.org/2023.findings-acl.566.pdf)
+  - [A CIF-Based Speech Segmentation Method for Streaming E2E ASR](https://ieeexplore.ieee.org/document/10081040)
+  - [Improving CTC-Based Speech Recognition via Knowledge Transferring from Pre-Trained Language Models](https://ieeexplore.ieee.org/abstract/document/9747887)
+  - [An Efficient Text Augmentation Approach for Contextualized Mandarin Speech Recognition](https://arxiv.org/abs/2406.09950)
 
-**Non-Autoregressive ASR**
-- [Boundary and Context Aware Training for CIF-based Non-Autoregressive End-to-End ASR](https://arxiv.org/abs/2104.04702)
-- [A Comparative Study on Non-Autoregressive Modelings for Speech-to-Text Generation](https://arxiv.org/abs/2110.05249)
-- [Paraformer: Fast and Accurate Parallel Transformer for Non-autoregressive End-to-End Speech Recognition](https://arxiv.org/abs/2206.08317)
-- [Paraformer-v2: An Improved Non-autoregressive Transformer for Noise-robust Speech Recognition](https://arxiv.org/abs/2409.17746)
-- [E-Paraformer: A Faster and Better Parallel Transformer for Non-autoregressive End-to-End Mandarin Speech Recognition](https://www.isca-archive.org/interspeech_2024/zou24_interspeech.pdf)
+- **ASR Context Biasing**
+  - [CIF-based Collaborative Decoding for End-to-End Contextual Speech Recognition](https://ieeexplore.ieee.org/document/9415054)
+  - [Improving End-to-End Contextual Speech Recognition with Fine-Grained Contextual Knowledge Selection](https://ieeexplore.ieee.org/document/9747101)
+  - [SeACo-Paraformer: A Non-Autoregressive ASR System with Flexible and Effective Hotword Customization Ability](https://arxiv.org/abs/2308.03266)
+  - [XCB: An Effective Contextual Biasing Approach to Bias Cross-lingual Phrases in Speech Recognition](https://arxiv.org/html/2408.10524v1/)
 
-**Non-Autoregressive Lip Reading**
-- [Non-Autoregressive Lipreading Model with Integrate-and-Fire](https://arxiv.org/abs/2008.02516)
+- **Low-resource Speech Recognition**
+  - [Efficiently Fusing Pretrained Acoustic and Linguistic Encoders for Low-resource Speech Recognition](https://arxiv.org/abs/2101.06699)
 
-**Speech Translation**
-- [UniST: Unified End-to-end Model for Streaming and Non-streaming Speech Translation](https://www.semanticscholar.org/paper/UniST%3A-Unified-End-to-end-Model-for-Streaming-and-Dong-Zhu/e4d4728bd2e4ba9b91d4d57e98b5c81f84a88a5f)
-- [Exploring Continuous Integrate-and-Fire for Efficient and Adaptive Simultaneous Speech Translation](https://arxiv.org/abs/2204.09595)
-- [Training Simultaneous Speech Translation with Robust and Random Wait-k-Tokens Strategy](https://aclanthology.org/2023.emnlp-main.484/)
+- **Non-Autoregressive ASR**
+  - [Boundary and Context Aware Training for CIF-based Non-Autoregressive End-to-End ASR](https://arxiv.org/abs/2104.04702)
+  - [A Comparative Study on Non-Autoregressive Modelings for Speech-to-Text Generation](https://arxiv.org/abs/2110.05249)
+  - [Paraformer: Fast and Accurate Parallel Transformer for Non-autoregressive End-to-End Speech Recognition](https://arxiv.org/abs/2206.08317)
+  - [Paraformer-v2: An Improved Non-autoregressive Transformer for Noise-robust Speech Recognition](https://arxiv.org/abs/2409.17746)
+  - [E-Paraformer: A Faster and Better Parallel Transformer for Non-autoregressive End-to-End Mandarin Speech Recognition](https://www.isca-archive.org/interspeech_2024/zou24_interspeech.pdf)
 
-**Spiking Neural Networks**
-- [Complex Dynamic Neurons Improved Spiking Transformer Network for Efficient Automatic Speech Recognition](https://arxiv.org/abs/2302.01194)
+- **Non-Autoregressive Lip Reading**
+  - [Non-Autoregressive Lipreading Model with Integrate-and-Fire](https://arxiv.org/abs/2008.02516)
 
-**Multimodal ASR**
-- [VILAS: Exploring the Effects of Vision and Language Context in Automatic Speech Recognition](https://ieeexplore.ieee.org/document/10448450)
-- [X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages](https://github.com/phellonchen/X-LLM)
-- [CM-CIF: Cross-Modal for Unaligned Modality Fusion with Continuous Integrate-and-Fire](https://ieeexplore.ieee.org/abstract/document/9846612)
+- **Speech Translation**
+  - [UniST: Unified End-to-end Model for Streaming and Non-streaming Speech Translation](https://www.semanticscholar.org/paper/UniST%3A-Unified-End-to-end-Model-for-Streaming-and-Dong-Zhu/e4d4728bd2e4ba9b91d4d57e98b5c81f84a88a5f)
+  - [Exploring Continuous Integrate-and-Fire for Efficient and Adaptive Simultaneous Speech Translation](https://arxiv.org/abs/2204.09595)
+  - [Training Simultaneous Speech Translation with Robust and Random Wait-k-Tokens Strategy](https://aclanthology.org/2023.emnlp-main.484/)
 
-**Keyword Spotting**
-- [Leveraging Synthetic Speech for CIF-Based Customized Keyword Spotting](https://link.springer.com/chapter/10.1007/978-981-97-0601-3_31)
+- **Spiking Neural Networks**
+  - [Complex Dynamic Neurons Improved Spiking Transformer Network for Efficient Automatic Speech Recognition](https://arxiv.org/abs/2302.01194)
 
-#### b. Repositories
+- **Multimodal ASR**
+  - [VILAS: Exploring the Effects of Vision and Language Context in Automatic Speech Recognition](https://ieeexplore.ieee.org/document/10448450)
+  - [X-LLM: Bootstrapping Advanced Large Language Models by Treating Multi-Modalities as Foreign Languages](https://github.com/phellonchen/X-LLM)
+  - [CM-CIF: Cross-Modal for Unaligned Modality Fusion with Continuous Integrate-and-Fire](https://ieeexplore.ieee.org/abstract/document/9846612)
 
-- [CIF-PyTorch](https://github.com/MingLunHan/CIF-PyTorch) — A PyTorch implementation of a standalone CIF module.
-- [torch_cif](https://github.com/George0828Zhang/torch_cif) — A faster PyTorch implementation of CIF.
-- [CIF-ColDec](https://github.com/MingLunHan/CIF-ColDec) — CIF-based Contextualization and Collaborative Decoding (ColDec).
-- [w2v-cif-bert](https://github.com/aispeech-lab/w2v-cif-bert) — CIF as a bridge connecting pre-trained acoustic models and pre-trained language models.
-- [CIF-HieraDist](https://github.com/MingLunHan/CIF-HieraDist) — The official implementation of Hierarchical Knowledge Distillation (HieraDist) for CIF-based models.
+- **Keyword Spotting**
+  - [Leveraging Synthetic Speech for CIF-Based Customized Keyword Spotting](https://link.springer.com/chapter/10.1007/978-981-97-0601-3_31)
+
+### b. Repositories
+
+- [**CIF-PyTorch**](https://github.com/MingLunHan/CIF-PyTorch) — A PyTorch implementation of a standalone CIF module.
+- [**torch_cif**](https://github.com/George0828Zhang/torch_cif) — A faster PyTorch implementation of CIF.
+- [**CIF-ColDec**](https://github.com/MingLunHan/CIF-ColDec) — CIF-based Contextualization and Collaborative Decoding (ColDec).
+- [**w2v-cif-bert**](https://github.com/aispeech-lab/w2v-cif-bert) — CIF as a bridge connecting pre-trained acoustic models and pre-trained language models.
+- [**CIF-HieraDist**](https://github.com/MingLunHan/CIF-HieraDist) — The official implementation of Hierarchical Knowledge Distillation (HieraDist) for CIF-based models.
+
+---
+
+⭐ If you find this repository helpful, please consider giving it a star.
